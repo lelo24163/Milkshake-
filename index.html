@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starbucks Online Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://1000logos.net/wp-content/uploads/2017/08/Starbucks-Logo-768x483.png" alt="Starbucks Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section class="hero">
+    <h1>Welcome to Starbucks</h1>
+    <p>Explore our menu and add your favorites to the cart!</p>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Menu</h2>
+    <div class="menu-items" id="menu-items"></div>
+  </section>
+
+  <section class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Total: $0.00</p>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Starbucks Coffee Company</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
